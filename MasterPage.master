@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="webpages_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/header.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/homepagecontent.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/footer.css" rel="stylesheet" type="text/css"/>
+    <link href="CSS/content.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <div id="wrapper">
+    <div>
+        
+            <table style="width:100%;">
+                <tr>
+                    <td id="header" class="auto-style1">
+                        <div id="login"></div>
+                        <div id="logoarea">
+                            <img alt="" class="logo" src="images/logobar.png" /></div>
+                        <div id="headermenubar">
+                            <ul>
+                              <li><a href="homepagecontent.aspx">Home</a>  |</li>
+                             
+                              <li><a href="">Flight Tickets</a> |</li>
+                              <li><a href="">Hotels</a> |</li>
+                              <li><a href="">Rent Cars</a></li>
+                         
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content">
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="footer">
+                       <div id="info1">
+  <h3>Job Searchers</h3>
+  <p>Search For Jobs</p>
+  <p>Upload A Resume</p>
+  <p>Job Alerts</p>
+  </div>
+  <div id="info2">
+  <h3>Job Adverisers </h3>
+  <p>Post A Job</p>
+  <p>Advertise With Us</p>
+  </div>
+  <div id="info3">
+  <h3>About Us</h3>
+  <p>About Zippity</p>
+  <p>F & Q</p>
+  <p>Contact Us</p>
+  </div>
+  <div id="networkbox">
+    <img src="images\fb.png" width="34" height="42" /><img src="images\tw.png" width="38" height="41" />
+  </div>
+  <div id="footermenu">
+
+  </div>
+
+<div id="copyright">
+    <p>© 2013 Zippity Corporation, Inc. All rights reserved.</p></div> 
+                         
+
+
+                    </td>
+                </tr>
+            </table>
+        
+        
+
+    </div>
+    </div>
+</body>
+</html>

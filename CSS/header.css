@@ -1,0 +1,40 @@
+﻿body{
+	margin:auto;
+	}
+#wrapper {
+	margin:auto;
+	width:1024px;
+	height:auto;
+	position:relative;
+}
+.logo {
+      width: 1024px;
+      height: 200px;
+}
+
+#headermenubar{		
+	margin-top:20px;
+    height: 35px;
+}
+#headermenubar ul {
+    list-style-type:none;
+    margin:0;
+}
+#headermenubar li{
+float:left;
+display:inline;
+position: relative;
+font-family:'Arial Unicode MS';
+font-size:20px;
+padding:5px;
+color:#002157;
+	}
+#headermenubar li a{
+	color:#568cb3;
+	font-weight:bold;
+	text-decoration:none;	
+	}
+#login {
+    float:right;
+
+}

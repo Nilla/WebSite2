@@ -1,0 +1,60 @@
+﻿
+#info1{
+	float: left;
+	margin-top: 45px;
+	font-size: 14px;
+	color: #FFF;
+	margin-left: 150px;
+	}
+	
+#info2{
+
+	float: left;
+	font-size: 14px;
+	color: #FFF;
+	margin-left: 70px;
+	margin-top: 45px;
+	
+	}
+#info3{
+
+	float: left;
+	font-size: 14px;
+	color: #FFF;
+	margin-left: 70px;
+	margin-top: 45px;
+	}
+#networkbox{
+ 
+	float: right;
+	margin-top: 195px;
+	margin-right: 30px;
+	}
+#footer {
+	background-image: url(http://localhost:1717/images/footer.png);
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+}
+#footermenu{
+	color:#FFF;
+	clear: left;
+	margin-left: 150px;
+	padding-top: 18px;
+
+	}
+#footermenu a{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+	}
+#footermenu a:link {
+	text-decoration: none;
+}
+#footermenu a:hover {
+	text-decoration: underline;
+}
+#copyright{
+	margin-left: 200px;
+	
+	}
