@@ -1,0 +1,176 @@
+body
+{
+	font-family: arial;
+	color: #444444;
+	background: #EFF4F8 url("http://localhost:1717/img/live_preview_img/aspp_background.png") repeat-x;
+}
+.page
+{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+a
+{
+	text-decoration: none;
+}
+fieldset
+{
+	border: none;
+}
+.clearfix:after
+{
+    font-size: 0px;
+    content: ".";
+    display: block;
+    height: 0px;
+    visibility: hidden;
+    clear: both;
+}
+/* === live preview style === */
+.bar
+{
+	width:770px;
+	height: 52px;
+	background: url("http://localhost:1717/img/live_preview_img/aspp_bar.png") no-repeat;
+	color: #5596bc;
+	margin-bottom: 15px;
+	margin-top: 30px;
+	padding-left: 30px;
+	padding-top: 18px;
+}
+.title
+{
+	margin-top: 15px;
+	font-size: 26px;
+	color: #5596bc;
+}
+.buttonPopup
+{
+	float: left;
+	width: 150px;
+	height: 59px;
+	display: block;
+	margin-left: 10px;
+}
+.button_gray
+{
+	background-image: url("http://localhost:1717/img/live_preview_img/aspp_button_gray.png");
+}
+.button_green
+{
+	background-image: url("http://localhost:1717/img/live_preview_img/aspp_button_green.png");
+}
+.button_blue
+{
+	background-image: url("http://localhost:1717/img/live_preview_img/aspp_button_blue.png");
+}
+.button_maroon
+{
+	background-image: url("http://localhost:1717/img/live_preview_img/aspp_button_maroon.png");
+}
+.button_orange
+{
+	background-image: url("http://localhost:1717/img/live_preview_img/aspp_button_orange.png");
+}
+.popup
+{
+	width: 788px;
+	position: absolute;
+	display: none;
+}
+.overlay
+{
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	background-color: #000000;
+	z-index: 100;
+}
+.content .title
+{
+	margin-top: 10px; 
+	margin-bottom: 20px; 
+	font-size: 24px;
+	color: #444444;
+}
+.alert
+{
+	clear: both;
+	border: 1px solid #c83348;
+	background-color: #ec7f7f;
+	-moz-border-radius: 10px;
+	-moz-box-shadow: 3px 3px 20px #ec7f7f;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: 3px 3px 20px #ec7f7f;
+	border-radius: 10px;
+	box-shadow: 3px 3px 20px #ec7f7f;
+	padding: 10px;
+	margin-bottom: 15px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 150%;
+}
+.message
+{
+	clear: both;
+	border: 1px solid #c8c8c8;
+	background-color: #e2e2e2;
+	-moz-border-radius: 10px;
+	-moz-box-shadow: 3px 3px 20px #e2e2e2;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: 3px 3px 20px #e2e2e2;
+	border-radius: 10px;
+	box-shadow: 3px 3px 20px #e2e2e2;
+	padding: 10px;
+	margin-bottom: 15px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 150%;
+}
+/* === steps === */
+.p2Step1, .p2Step2, .p2Step3, .p2Step4
+{
+	width: 173px;
+}
+.p3Step1, .p3Step2, .p3Step3, .p3Step4
+{
+	width: 173px;
+}
+.p4Step1
+{
+	width: 202px;
+}
+.p4Step2
+{
+	width: 160px;
+}
+.p4Step3
+{
+	width: 135px;
+}
+.p4Step4
+{
+	width: 100px;
+}
+.p4Step5
+{
+	width: 85px;
+}
+.p5Step1, .p5Step2, .p5Step3
+{
+	width: 240px;
+}
+.p6Step1, .p6Step2, .p6Step3, .p6Step4
+{
+	width: 175px;
+}
+.p7Step1, .p7Step2
+{
+	width: 371px;
+}
+.p8Step1, .p8Step2, .p8Step3
+{
+	width: 240px;
+}

@@ -1,9 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="hotelcontent.aspx.cs" Inherits="webpages_hotelcontent" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="MasterPage.master" AutoEventWireup="true" CodeFile="Flightcontent.aspx.cs" Inherits="webpages_hotelcontent" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 <link type="text/css" rel="stylesheet" href="style.css" />
 <link type="text/css" rel="stylesheet" href="livePreviewStyle.css" />
 <link type="text/css" rel="stylesheet" href="colors/allColors.css" />
+<link type="text/css" rel="stylesheet" href="CSS/Flighcontent.css" />
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.processPanel.packed.js"></script>
 <script type="text/javascript">
@@ -48,10 +49,42 @@
 </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <form id="form1" runat="server">
     <div id="hotelbody">
      <div id="searchareas">
-         <div id="searchbox"></div>
-         <div id="flightdetails"></div>
+       <div id="searchbox">
+                <h3>Finding Flight Tickets</h3>
+        <div id="flight">
+        <asp:Label ID="Label1" runat="server" Text="From"></asp:Label>
+        <asp:DropDownList ID="DropDownList1" runat="server">
+        </asp:DropDownList>
+        <br />
+        <asp:Label ID="Label2" runat="server" Text="To"></asp:Label>
+        <asp:DropDownList ID="DropDownList2" runat="server"></asp:DropDownList>
+            <br />
+        <asp:Label ID="Label3" runat="server" Text="Depart:"></asp:Label>
+        <input id="depart" type="text" size="25"/><a href="javascript:NewCal('depart','ddmmyyyy')">
+            <img src="js/cal.gif" width="16" height="16" border="0" alt="Pick a date"/></a>
+        <br />
+        <asp:Label ID="Label4" runat="server" Text="Return:"></asp:Label>
+     
+        <input id="return" type="text" size="25"/><a href="javascript:NewCal('return','ddmmyyyy')">
+            <img src="js/cal.gif" width="16" height="16" border="0" alt="Pick a date"/></a>
+        <br />
+        <asp:Label ID="Label5" runat="server" Text="Seat Qty"></asp:Label>
+        <asp:DropDownList ID="DropDownList3" runat="server">
+        </asp:DropDownList>
+        <br />   
+        <br />
+        <asp:Button ID="Button1" runat="server" Text="Search" />
+      </div>
+
+         </div>
+         <div id="flightdetails">
+             <h3>Booking Items</h3>
+
+
+         </div>
      </div>
     <div class="panel clearfix" id="processPanel9" style="margin-top: 30px;">
 				<a href="#p9content1" label="1">
@@ -61,7 +94,7 @@
 					Passenger Info
 				</a>
 				<a href="#p9content3" label="3">
-					Contact Info/ payment
+					Contact Info/ Payment
 				</a>
 				<form id="exampleForm" action="formProcessor.php" method="post">
 					<fieldset id="p9content1">
@@ -96,5 +129,6 @@
 				</form>
 			</div>
      </div>
+     </form>
 </asp:Content>
 

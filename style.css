@@ -1,0 +1,89 @@
+/* === step process panel === */
+.panel
+{
+	background-color: #ffffff;
+	border: 1px solid #dbe6ee;
+	padding: 10px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+/* === steps === */
+.step
+{
+	float: left;
+	position: relative;
+	margin-left: -20px;
+	width: 351px;
+	height: 43px;
+	font-size: 16px;
+	padding-left: 20px;
+	padding-top: 18px;
+	background-image: url("img/sprite_with_icons.png");
+	background-repeat: no-repeat;
+	outline: none;
+}
+/* === default step classes (attached automatically to every step) === */
+.step1, .step2, .step3
+{
+	width: 237px; /* set some custom width */
+}
+/* === steps labels === */
+.stepLabel
+{
+	position: absolute;
+	top: 19px;
+	right: 30px;
+}
+.stepLabelLast
+{
+	position: absolute;
+	top: 19px;
+	right: 25px;
+}
+/* === contents === */
+.content
+{
+	clear: both;
+	padding: 10px;
+	line-height: 150%;
+}
+/* === nextPrevButtons === */
+.nextPrevButtons
+{
+	clear: both;
+	width: 310px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nextPrevButtons .button:first-child
+{
+	margin-right: 10px;
+}
+.nextPrevButtons .button
+{
+	float: left;
+	display: block;
+	width: 150px;
+	height: 34px;
+	padding-top: 12px;
+	text-align: center;
+	background-image: url("img/sprite_buttons.png");
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.nextPrevButtons .inactiveButton
+{
+	background-position: -10px -310px;
+	color: #ffffff;
+}
+/* === boxStart === */
+.boxStart
+{
+	float: left;
+	width: 6px;
+	height: 60px;
+	background: url("img/sprite_with_icons.png") no-repeat;
+}

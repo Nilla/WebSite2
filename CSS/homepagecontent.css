@@ -1,75 +1,6 @@
-﻿#details{
-	width: 100%;
-	margin-top: 20px;
-    margin-left:40px;
-	padding: 10px 0 0 0;
-	list-style: none;  
-	
-	}
-#details li{
-	float:left;
-	display:inline;
-	position: relative;
-	font-family:'Arial Unicode MS';
-	font-size:20px;
-	padding:5px;
-    color:white;
-	font-weight: bold;
-}
-#details li a{
-	color:white;
-	font-weight:bold;
-	text-decoration:none;	
-	}
-#details li a:hover{
-	color:white;
-	text-decoration:underline;
-	}
-	
-#details li:hover > ul{
-	display: block;
-	width:300px;
-	height:200px;
-	background-color:#0072bc;
-	visibility:visible;  
-    border-radius:5px;	
-}
-
-
-#details ul{
-    list-style: none;
-    margin-top: 10px;
-    padding: 0;
-	position: absolute;
-    top: 35px;
-    left: 0;
-	visibility:hidden; 	    
-}
-#details ul li{
-    float: none;
-    margin: 0;
-    padding: 0;
-    display: block;
-
-}
-#details ul li a{
-	color:white;
-	}
-#details ul li:first-child:after{
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: -8px;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 8px solid #0072bc;
-}
-
-
+﻿
 #product_content_box {
-background-color:#ff7200;
+background-image:url(http://localhost:1717/images/barorange.jpg);
 height:289px;
 width:1024px;
 margin:auto;
@@ -89,7 +20,7 @@ margin-bottom:100px;
   }
   .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; 
                                    float: left; width: 12em; 
-                                   background-color:#ff7200;
+                                   
                                    list-style: none; 
                                    color:white; 
                                    margin-right:10px;
@@ -115,7 +46,7 @@ margin-bottom:100px;
   .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { 
        
       padding:10px; 
-      background-color:#ff7200;
+      background-color:#f6b11d;
 
 
   }
@@ -133,7 +64,7 @@ margin-bottom:100px;
     height:260px;
 	margin:30px;
     background-color:white;
-	border:9px solid #002157;
+	border:9px solid #dbeaf5;
 	text-align:left; /* reset align=center */
     float:left;
     box-shadow: 0 1px 1px #777;

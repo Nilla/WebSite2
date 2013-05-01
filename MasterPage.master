@@ -4,7 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Traveleasy</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="CSS/header.css" rel="stylesheet" type="text/css"/>

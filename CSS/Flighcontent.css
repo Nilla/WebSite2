@@ -1,0 +1,30 @@
+﻿#processPanel9 {
+float:right;
+}
+#searchareas {
+float:left;
+}
+#searchbox {
+    height:287px;
+    width:195px;
+    background-color: #ffffff;
+	border: 1px solid #dbe6ee;
+    box-shadow: 0 1px 1px #777;   
+    -moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+    margin-top:30px;
+    
+}
+#flightdetails {
+
+    height:287px;
+    width:195px;
+    background-color: #ffffff;
+	border: 1px solid #dbe6ee;
+    box-shadow: 0 1px 1px #777;
+    -moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+    margin-top:30px;
+}

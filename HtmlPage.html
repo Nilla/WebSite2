@@ -2,65 +2,153 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+<link type="text/css" rel="stylesheet" href="livePreviewStyle.css" />
+<link type="text/css" rel="stylesheet" href="colors/allColors.css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.processPanel.packed.js"></script>
+<script type="text/javascript">
+    function checkEmail(email) {
+        if (email == "")
+            return false;
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        if (reg.test(email) == false)
+            return false;
+        else
+            return true;
+    }
+    $(document).ready(function () {
+        $("#processPanel9").processPanel({
+            style: "blue-orange",
+            onOpen: function (event, step, content, stepNumber) {
+                if (stepNumber == 2) {
+                    $("#p9content1 .alert").remove();
+                    if ($("[name=name]").val() == "") {
+                        $("#p9content1").prepend("<div class='alert'>Please enter your name!</div>");
+                        return false;
+                    }
+                }
+                else if (stepNumber == 3) {
+                    $("#p9content2 .alert").remove();
+                    if (!checkEmail($("[name=email]").val())) {
+                        $("#p9content2").prepend("<div class='alert'>Please enter valid e-mail address!</div>");
+                        return false;
+                    }
+                }
+            }
+        });
+        $("#processPanel9 #exampleForm").submit(function () {
+            $("#p9content3 .alert").remove();
+            if ($("[name=check]").val() != "5") {
+                $("#p9content3").prepend("<div class='alert'>Please enter correct result!</div>");
+                return false;
+            }
+        });
+    });
+</script>
 </head>
 <body>
-    <table width="400px" cellpadding="0" cellspacing="0">
-                <tbody>
-                    <tr><td colspan="4" height="30px" align="center" style="font-size:14px">
-                        <b>Latest flight deals from <font color="#F69C29">Australia</font></b>*</td></tr>
-                    <tr><td align="center" style="padding-left:25px;padding-right:20px;font-size:12px" colspan="4">departing from:&nbsp;
-                        <select name="dpt_frm" id="dpt_frm"><option>select your city</option>
-                            <option>Adelaide</option>
-                            <option>Alice Springs</option>
-                            <option>Brisbane</option>
-                            <option>Cairns</option>
-                            <option>Coffs Harbour</option>
-                            <option>Gold Coast</option>
-                            <option>Hobart</option>
-                            <option>Mackay</option>
-                            <option>Melbourne-Tullamarine</option>
-                            <option>Perth</option>
-                            <option>Sunshine Coast</option>
-                            <option>Sydney</option></select></td></tr>
-                    <tr><td height="10" colspan="4">&nbsp;</td></tr>
-                    <tr><td height="30px" valign="top" width="33%" style="padding-left:20px;padding-top:10px;">
-			  				<a href="real_deals.php"><span class="price">From $49.95</span></a><br>
-							<a href="real_deals.php"><span class="fares_city">Adelaide to Melbourne-Tullamarine</span></a>
-						</td>
-                    <td height="30px" valign="top" width="33%" style="padding-left:5px;padding-top:10px;">
-			  				<a href="real_deals.php"><span class="price">From A$79.95</span></a><br>
-							<a href="real_deals.php"><span class="fares_city">Alice Springs to Melbourne-Tullamarine</span></a>
-						</td>
-                    <td height="30px" valign="top" width="33%" style="padding-right:20px;padding-top:10px;">
-			  				<a href="real_deals.php"><span class="price">From A$79.95</span></a><br>
-							<a href="real_deals.php"><span class="fares_city">Alice Springs to Sydney</span></a></tr>
-						<tr></td>
-                        <td height="30px" valign="top" width="33%" style="padding-left:20px;padding-top:10px;">
-			  				<a href="real_deals.php"><span class="price">From A$64.95</span></a><br>
-							<a href="real_deals.php"><span class="fares_city">Brisbane to Sydney</span></a>
-						</td>
-                        <td height="30px" valign="top" width="33%" style="padding-left:5px;padding-top:10px;">
-			  				<a href="real_deals.php"><span class="price">From A$64.95</span></a><br>
-							<a href="real_deals.php"><span class="fares_city">Brisbane to Melbourne-Tullamarine</span></a>
-						</td>
-                        <td height="30px" valign="top" width="33%" style="padding-right:20px;padding-top:10px;">
-			  				<a href="real_deals.php"><span class="price">From A$79.95</span></a><br>
-							<a href="real_deals.php"><span class="fares_city">Cairns to Sydney</span></a>
-						</td></tr>
-                        <tr><td height="30px" valign="top" width="33%" style="padding-left:20px;padding-top:10px;">
-			  				<a href="real_deals.php"><span class="price">From A$99.95</span></a><br>
-							<a href="real_deals.php"><span class="fares_city">Cairns to Melbourne-Tullamarine</span></a>
-						</td>
-                        <td height="30px" valign="top" width="33%" style="padding-left:5px;padding-top:10px;">
-			  				<a href="real_deals.php"><span class="price">From A$39.95</span></a><br>
-							<a href="real_deals.php"><span class="fares_city">Coffs Harbour to Sydney</span></a>
-						</td>
-                        <td height="30px" valign="top" width="33%" style="padding-right:20px;padding-top:10px;">
-			  				<a href="real_deals.php"><span class="price">From A$44.95</span></a><br>
-							<a href="real_deals.php"><span class="fares_city">Gold Coast to Sydney</span></a>
-						</td></tr>
-                   
-			      </tbody>
-		    </table>>
+    <div class="panel clearfix" id="processPanel9" style="margin-top: 30px;">
+				<a href="#p9content1" label="1">
+					Description
+				</a>
+				<a href="#p9content2" label="2">
+					Implementation - html
+				</a>
+				<a href="#p9content3" label="3">
+					Implementation - js
+				</a>
+				<form id="exampleForm" action="formProcessor.php" method="post">
+					<fieldset id="p9content1">
+						<div class="title">Step one - description</div>
+						<div style="width: 372px; float: left; margin-right: 10px;">
+							This example shows how to integrate Dynamic Step Process Panels with form.<br /><br />
+							Features:<br />
+							- 3 steps (width configurable in css), <br />
+							- custom form validation, <br />
+							- first step selected,<br />
+							- step-by-step mode,<br />
+							- previous and next buttons,<br />
+							- step labels,<br />
+							- every step can be choosed again,<br />
+							- fade effect speed 1 second,<br />
+							- style orange-blue
+						</div>
+						<div style="width: 372px; float: left;">
+							Please enter your name before you go to the second step:<br />
+							name: <input type="text" name="name" />
+						</div>
+					</fieldset>
+					<fieldset id="p9content2">
+						<div class="title">Step two - implementation html</div>
+						<div>
+							Please enter your e-mail before you go to the third step:<br />
+							e-mail: <input type="text" name="email" />
+						</div>
+						<div>
+						<pre>&lt;div id="processPanel9" class="panel"&gt;
+	&lt;a href="#p9content1" label="1"&gt;
+		Description
+	&lt;/a&gt;
+	&lt;a href="#p9content2" label="2"&gt;
+		Implementation - html
+	&lt;/a&gt;
+	&lt;a href="#p9content3" label="3"&gt;
+		Implementation - js
+	&lt;/a&gt;
+	&lt;form id="exampleForm" action="formProcessor.php" method="post"&gt;
+		&lt;fieldset id="p9content1"&gt;content for step 1&lt;/fieldset&gt;
+		&lt;fieldset id="p9content2"&gt;content for step 2&lt;/fieldset&gt;
+		&lt;fieldset id="p9content3"&gt;content for step 3&lt;/fieldset&gt;
+	&lt;form/&gt;
+&lt;/div&gt;</pre>
+						</div>
+					</fieldset>
+					<fieldset id="p9content3">
+						<div class="title">Step three - implementation js</div>
+						<div>
+							2+3= <input type="text" name="check" />&nbsp;<input type="submit" value="Submit form" />
+						</div>
+						<div>
+						<pre>$("#processPanel9").processPanel({
+	style: "blue-orange",
+	onOpen: function(event, step, content, stepNumber){
+		if(stepNumber==2)
+		{
+			$("#p9content1 .alert").remove();
+			if($("[name=name]").val()=="")
+			{
+				$("#p9content1").prepend("&lt;div class='alert'&gt;Please enter 
+				your name!&lt;/div&gt;");
+				return false;
+			}
+		}
+		else if(stepNumber==3)
+		{
+			$("#p9content2 .alert").remove();
+			if(!checkEmail($("[name=email]").val()))
+			{
+				$("#p9content2").prepend("&lt;div class='alert'&gt;Please enter
+				valid e-mail address!&lt;/div&gt;");
+				return false;
+			}
+		}
+	}
+});
+$("#processPanel9 #exampleForm").submit(function(){
+	$("#p9content3 .alert").remove();
+	if($("[name=check]").val()=="5")
+		$(this).submit();
+	else
+	{
+		$("#p9content3").prepend("&lt;div class='alert'&gt;Please enter 
+		correct result!&lt;/div&gt;");
+		return false;
+	}
+});</pre>
+						</div>
+					</fieldset>
+				</form>
+			</div>
 </body>
 </html>
