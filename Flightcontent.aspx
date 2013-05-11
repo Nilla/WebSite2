@@ -53,7 +53,8 @@
     <div id="hotelbody">
      <div id="searchareas">
        <div id="searchbox">
-                <h3>Finding Flight Tickets</h3>
+                <h3>Finding Flights</h3>
+              
         <div id="flight">
         <asp:Label ID="Label1" runat="server" Text="From"></asp:Label>
         <asp:DropDownList ID="DropDownList1" runat="server">
@@ -82,7 +83,76 @@
          </div>
          <div id="flightdetails">
              <h3>Booking Items</h3>
+             <div id="depart1">
+             <div class="heading">Depart</div>
+              <div class="flight" id="departflight">
+                  <asp:Label ID="fligtname" runat="server" Text="Label"></asp:Label>
+                  <asp:Label ID="Label19" runat="server" Text="From"></asp:Label>
+                  <asp:Label ID="city1" runat="server" Text="city1"></asp:Label>
+                  <asp:Label ID="Label6" runat="server" Text="To"></asp:Label>
+                  <asp:Label ID="city2" runat="server" Text="city2"></asp:Label>
+                  <br />
+                  <asp:Label ID="Date" runat="server" Text="date"></asp:Label>
+                  <asp:Label ID="Label21" runat="server" Text="Label"></asp:Label>
+                  <br />
+                  <asp:Label ID="Label22" runat="server" Text="Depart Time"></asp:Label>
+                  <asp:Label ID="Label23" runat="server" Text="Label"></asp:Label>
+                  <br />
+                  <asp:Label ID="Label24" runat="server" Text="Arrive Time"></asp:Label>
+                  <asp:Label ID="Label25" runat="server" Text="Label"></asp:Label>
+              </div>
+              <div class="priceheading">Pricing</div>
+              <div class="pricedisplay" id="departprice">
+                  <asp:Label ID="qty" runat="server" Text="number"></asp:Label>
+                  <asp:Label ID="Label7" runat="server" Text="Adult"></asp:Label>
+                  <br />
+                  <asp:Label ID="Label8" runat="server" Text="Fare"></asp:Label>
+                  <asp:Label ID="fareprice" runat="server" Text="number"></asp:Label>
+                  <br />
+                  <asp:Label ID="Label10" runat="server" Text="GST"></asp:Label>
+                  <asp:Label ID="gstprice" runat="server" Text="number"></asp:Label>
+                  <br />
+              </div>
+              <div class="Div1"></div>
+             </div>
+             <div id="return1">
+             <div class="heading">Return</div>
+              <div class="flight" id="returnflight">
+                   <asp:Label ID="Label9" runat="server" Text="Label"></asp:Label>
+                  <asp:Label ID="Label11" runat="server" Text="From"></asp:Label>
+                  <asp:Label ID="Label18" runat="server" Text="city1"></asp:Label>
+                  <asp:Label ID="Label20" runat="server" Text="To"></asp:Label>
+                  <asp:Label ID="Label26" runat="server" Text="city2"></asp:Label>
+                  <br />
+                  <asp:Label ID="Label27" runat="server" Text="date"></asp:Label>
+                  <asp:Label ID="Label28" runat="server" Text="Label"></asp:Label>
+                  <br />
+                  <asp:Label ID="Label29" runat="server" Text="Depart Time"></asp:Label>
+                  <asp:Label ID="Label30" runat="server" Text="Label"></asp:Label>
+                  <br />
+                  <asp:Label ID="Label31" runat="server" Text="Arrive Time"></asp:Label>
+                  <asp:Label ID="Label32" runat="server" Text="Label"></asp:Label>
 
+
+              </div>
+              <div class="priceheading">Pricing</div>
+              <div class="pricedisplay" id="returnprice">
+                  <asp:Label ID="Label12" runat="server" Text="Label"></asp:Label>
+                  <asp:Label ID="Label13" runat="server" Text="Adult"></asp:Label>
+                  <br />
+                  <asp:Label ID="Label14" runat="server" Text="Fare"></asp:Label>
+                  <asp:Label ID="Label15" runat="server" Text="Label"></asp:Label>
+                  <br />
+                  <asp:Label ID="Label16" runat="server" Text="GST"></asp:Label>
+                  <asp:Label ID="Label17" runat="server" Text="Label"></asp:Label>
+                  <br />
+
+
+              </div>
+              <div class="Div1"></div>
+             </div>
+              <div id="totalheading">Total</div>
+              <div id="totalprice">$</div>
 
          </div>
      </div>
