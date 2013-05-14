@@ -171,10 +171,10 @@
 					Select Flight
 				</a>
 				<a href="#p9content2" label="2">
-					Passenger Info
+					Contact Info
 				</a>
 				<a href="#p9content3" label="3">
-					Contact Info/ Payment
+					Payment
 				</a>
 				<form id="exampleForm" action="formProcessor.php" method="post">
 					<fieldset id="p9content1">
@@ -292,7 +292,7 @@
 						</div>
 					</fieldset>
 					<fieldset id="p9content2">
-						<div class="title">Step two - implementation html</div>
+						<div class="title">Step two - Payment</div>
 						
 						<div class="searchresult" style="width: 750px; float: left; margin-right: 10px;">
 						

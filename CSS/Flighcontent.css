@@ -27,7 +27,7 @@ float:left;
 	border-radius: 3px;
     margin-top:30px;
 }
-h3 {
+#flightdetails h3, #searchbox h3 {
 text-align:center;
 width:193px;
 height:23px;
