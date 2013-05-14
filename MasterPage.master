@@ -21,7 +21,7 @@
             <table style="width:100%;">
                 <tr>
                     <td id="header" class="auto-style1">
-                        <div id="login"></div>
+                        <div id="time"></div>
                         <div id="logoarea">
                             <img alt="" class="logo" src="images/logobar.png" /></div>
                         <div id="headermenubar">

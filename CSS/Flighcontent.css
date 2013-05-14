@@ -77,20 +77,14 @@ color:#F69D0E;
     width:189px;
     background-color:#53BAE3; 
 }
-#totalheading {
-    margin:auto;
-    font-size:large;
-    font-weight:bold;
-    color:white;
-    width:189px;
-    height:29px;
-    background-color:#53BAE3; 
-    text-align:center;
-}
+
 #totalprice {
+font-size:larger;
+font-weight:bold;
+color:white;
 margin-top:5px;
-text-align:center;
 width:193px;
-height:43px;
-color:#F69D0E;
+height:63px;
+color:white;
+background-color:#53BAE3; 
 }
