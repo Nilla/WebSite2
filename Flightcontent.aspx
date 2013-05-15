@@ -47,14 +47,16 @@
         });
     });
 </script>
+    
     <style type="text/css">
         .auto-style1 {
             height: 52px;
         }
-        .auto-style2 {
-            width: 193px;
+        .auto-style4 {
+            height: 28px;
         }
     </style>
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
      <form id="form1" runat="server">
@@ -166,7 +168,7 @@
 
          </div>
      </div>
-    <div class="panel clearfix" id="processPanel9" style="margin-top: 30px;">
+ <div class="panel clearfix" id="processPanel9" style="margin-top: 30px;">
 				<a href="#p9content1" label="1">
 					Select Flight
 				</a>
@@ -176,11 +178,11 @@
 				<a href="#p9content3" label="3">
 					Payment
 				</a>
-				<form id="exampleForm" action="formProcessor.php" method="post">
+				
 					<fieldset id="p9content1">
 						<div class="title">Step one - Select Flight</div>
-						<div  class="searchresult" style="width: 750px; float: left; margin-right: 10px;">
-                            <table style="width:740px;border: 1px solid black;" >
+						<div style="width: 750px;  margin-right: 10px;">
+							 <table style="width:740px;border: 1px solid black;" >
                                 <tr style="background-color:#F69D0E;color:white; font-weight:bold;">
                                     <td>Departing:</td>
                                     <td>From</td>
@@ -236,11 +238,11 @@
                                     <td>Detail</td>                                   
                                 </tr>
                                 <tr>
-                                    <td class="auto-style1"></td>
-                                    <td class="auto-style1"></td>
-                                    <td class="auto-style1"></td>
-                                    <td class="auto-style1"></td>
-                                    <td class="auto-style1">
+                                    <td class=""></td>
+                                    <td class=""></td>
+                                    <td class=""></td>
+                                    <td class=""></td>
+                                    <td class="">
                                         <asp:Label ID="Label35" runat="server" Text="Raw Fare"></asp:Label>
                                             <br />
                                         <asp:RadioButton ID="RadioButton2" runat="server" /><asp:Label ID="Label36" runat="server" Text="Price"></asp:Label></td>
@@ -261,8 +263,8 @@
                                 </tr>
                             </table>
 						</div>
-						<div style="width: 740px; ">
-                            <table style="width: 100%;">
+						<div style="width: 750px; ">
+                            <table style="width:740px;">
                                 <tr>
                                     <td>TT-designated flights are operated by Easytravelling Airways Australia.</td>
                                     
@@ -289,32 +291,234 @@
                                 </tr>                  
 
                             </table>
+							Please enter your name before you go to the second step:<br />
+							name: <input type="text" name="name" />
 						</div>
 					</fieldset>
 					<fieldset id="p9content2">
-						<div class="title">Step two - Payment</div>
-						
-						<div class="searchresult" style="width: 750px; float: left; margin-right: 10px;">
-						
-						</div>
+						<div class="title">Step two - Contact Info</div>
+						<div class="searchresult" style="width:750px; float: left; margin-right: 10px;">
+						   <table style="width:740px;border: 1px solid black;">
+                                <tr style="color:white; font-weight:bold;background-color:#53BAE3;">
+                                    <td colspan="4">Flight Detail</td>
+                                </tr> 
+                                   <tr style="color:white;font-weight:bold;background-color:#F69D0E;">
+                                    <td colspan="4">Departing</td>
+                                </tr>
+                                  <tr style="">
+                                    <td style="width:201px;">From</td>
+                                    <td style="width:81px"></td>
+                                    <td style="width:208px">To</td>
+                                    <td style="width:230px"></td>                                                                
+                                </tr>
+                                  <tr style="">
+                                    <<td style="width:201px">From</td>
+                                    <td style="width:81px"></td>
+                                    <td style="width:208px">To</td>
+                                    <td style="width:230px"></td>                                                             
+                                </tr>
+                                  <tr>
+                                    <td colspan="4" style="color:white;font-weight:bold;background-color:#F69D0E;">Returning</td>
+                                </tr>
+                                  <tr style="">
+                                    <td style="width:201px">From</td>
+                                    <td style="width:81px"></td>
+                                    <td style="width:208px">To</td>
+                                    <td style="width:230px"></td>                                                                                             
+                                </tr>
+                                  <tr style="">
+                                    <td style="width:201px">From</td>
+                                    <td style="width:81px"></td>
+                                    <td style="width:208px">To</td>
+                                    <td style="width:230px"></td>                                                                                               
+                                </tr>
+                                 <tr style="">
+                                    <td colspan="4"style="font-size:small;" >Your selected flight details aredisplayed above. 
+                                        If you wish to select other travel dates, please search again using the flight search tool on the left.</td>                                                                                                                         
+                                </tr>
+                            </table>
+                            <table style="width:740px;border: 1px solid black;" >
+                                <tr style="color:white; font-weight:bold;background-color:#53BAE3;">
+                                    <td colspan="3">Contact Detail</td>
+                                </tr> 
+                                   <tr style="font-size:small;">
+                                    <td colspan="3">Please provide us your contact information and ensure its accuracy in the event we need to reach you to discuss changes to your booking or advise on changes to your flight.</td>
+                                </tr>
+                                  <tr style="">
+                                    <td style="text-align:right;">First name:</td>
+                                    <td colspan="2">
+                                        <asp:TextBox ID="TextBox2" runat="server" style="margin-left: 3px"></asp:TextBox>
+                                      </td>
+                                </tr>
+                                  <tr>
+                                    <td style="text-align:right;">Given name:</td>
+                                    <td colspan="2" class="auto-style4">
+                                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                                      </td>
+                                </tr>
+                                  <tr>
+                                    <td colspan="2" style="text-align:right;" >Gender</td>
+                                    <td width="445" >
+                                        <asp:RadioButton ID="RadioButton3" runat="server" OnCheckedChanged="RadioButton3_CheckedChanged" Text="Male" />
+                                        <asp:RadioButton ID="RadioButton4" runat="server" Text="Female" />
+                                      </td>
+                                </tr>
+                                  <tr style="">
+                                    <td colspan="2"style="text-align:right;">Street Address:</td>
+                                    <td rowspan="5">
+                                        <asp:TextBox ID="TextBox1" runat="server" Height="93px" Width="433px"></asp:TextBox>
+                                      </td>
+                                    >                                                                                                
+                                </tr>
+                                  <tr style="text-align:right;">
+                                    <td colspan="2">Town or City:</td>
+                                  </tr>
+                                  <tr style="">
+                                    <td colspan="2"style="text-align:right;">Country:</td>
+                                  </tr>
+                                  <tr style="">
+                                    <td colspan="2"style="text-align:right;">State:</td>
+                                  </tr>
+                                  <tr style="">
+                                    <td colspan="2"style="text-align:right;">Zip Code:</td>
+                                  </tr>
+                                  <tr style="">
+                                    <td colspan="2">&nbsp;</td>
+                                    <td >&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2"style="text-align:right;" class="auto-style1">Contact Phone:</td>
+                                    <td class="auto-style1" >
+                                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2"style="text-align:right;" >Email: </td>
+                                    <td >
+                                        <asp:TextBox ID="TextBox5" runat="server" Width="425px"></asp:TextBox>
+                                      </td>
+                                  </tr>
+                                  <tr style="">
+                                    <td colspan="2">&nbsp;</td>
+                                    <td style="font-size:small;" >We will send all important travel information such as your itinerary, tax invoices and flight updates to this email address. Please enter your information correctly as this is our only form of contacting you should there be changes to your itinerary.</td>
+                                  </tr>
+                                  <tr style="">
+                                    <td colspan="2" >&nbsp;</td>
+                                    <td >&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" >
+                                        
+                                      </td>
+                                    <td ><asp:CheckBox ID="CheckBox2" runat="server" />Retain details for my next visit.</td>
+                                  </tr>
+                                  <tr style="">
+                                    <td colspan="2">
+                                        
+                                      </td>
+                                    <td ><asp:CheckBox ID="CheckBox3" runat="server" />Sign me up! I'd like to receive Tiger Airways' Flight Deals and exclusive online offers.</td>
+                                  </tr>
+                                 <tr style="">
+                                    <td colspan="3" rowspan="4" >&nbsp;</td>                                                                                                                         
+                                </tr>
+                            </table>
+                        </div>                        
                         <div>
 							Please enter your e-mail before you go to the third step:<br />
 							e-mail: <input type="text" name="email" />
 						</div>
+						
 					</fieldset>
 					<fieldset id="p9content3">
-						<div class="title">Step three - implementation js</div>
-						
-						<div class="searchresult" style="width: 750px; float: left; margin-right: 10px;">
-						
+						<div class="title">Step three - Payment</div>
+                        <div class="searchresult" style="width:750px; float: left; margin-right: 10px;">						   
+                            <table style="width:740px;border: 1px solid black;">
+                                <tr style="color:white; font-weight:bold;background-color:#53BAE3;">
+                                    <td colspan="4">Flight Detail</td>
+                                </tr> 
+                                   <tr style="color:white;font-weight:bold;background-color:#F69D0E;">
+                                    <td colspan="4">Departing</td>
+                                </tr>
+                                  <tr style="">
+                                    <td style="width:201px;">From</td>
+                                    <td style="width:81px"></td>
+                                    <td style="width:208px">To</td>
+                                    <td style="width:230px"></td>                                                                
+                                </tr>
+                                  <tr style="">
+                                    <<td style="width:201px">From</td>
+                                    <td style="width:81px"></td>
+                                    <td style="width:208px">To</td>
+                                    <td style="width:230px"></td>                                                             
+                                </tr>
+                                  <tr>
+                                    <td colspan="4" style="color:white;font-weight:bold;background-color:#F69D0E;">Returning</td>
+                                </tr>
+                                  <tr style="">
+                                    <td style="width:201px">From</td>
+                                    <td style="width:81px"></td>
+                                    <td style="width:208px">To</td>
+                                    <td style="width:230px"></td>                                                                                             
+                                </tr>
+                                  <tr style="">
+                                    <td style="width:201px">From</td>
+                                    <td style="width:81px"></td>
+                                    <td style="width:208px">To</td>
+                                    <td style="width:230px"></td>                                                                                               
+                                </tr>
+                                 <tr style="">
+                                    <td colspan="4"style="font-size:small;" >Your selected flight details aredisplayed above. 
+                                        If you wish to select other travel dates, please search again using the flight search tool on the left.</td>                                                                                                                         
+                                </tr>
+                            </table>
+                            <table style="width:740px;border: 1px solid black;" >
+                                <tr style="color:white; font-weight:bold;background-color:#53BAE3;">
+                                    <td colspan="2">Payment</td>
+                                </tr> 
+                                   <tr style="font-weight:bold;">
+                                    <td colspan="2">Credit Card Payment</td>
+                                </tr>
+                                  <tr style="">
+                                    <td style="text-align:right;">Credit card:</td>
+                                    <td colspan="2">
+                                        <asp:TextBox ID="TextBox6" runat="server" style="margin-left: 3px"></asp:TextBox>
+                                      </td>
+                                </tr>
+                                  <tr>
+                                    <td style="text-align:right;">Payment amount:</td>
+                                    <td colspan="2">
+                                        <asp:Label ID="Label37" runat="server" Text="Label"></asp:Label>
+                                      </td>
+                                </tr>
+                                  <tr>
+                                    <td style="text-align:right;" >Card number:</td>
+                                    <td colspan="2" >
+                                        <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                                      </td>
+                                </tr>
+                                  <tr>
+                                    <td style="text-align:right;">Cardholder:</td>
+                                    <td colspan="2">
+                                       <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox></td>                                                                                               
+                                </tr>
+                                  <tr>
+                                    <td style="text-align:right;">Expiration date:</td>
+                                    <td colspan="2"><asp:TextBox ID="TextBox11" runat="server"></asp:TextBox></td>
+                                  </tr>
+                                <tr>
+                                    <td style="text-align:right;">CVV:</td>
+                                    <td colspan="2"><asp:TextBox ID="TextBox12" runat="server"></asp:TextBox></td>
+                                  </tr>                               
+                            </table>
+                        </div>       
+						<div>
+							2+3= <input type="text" name="check" />&nbsp;
+                            <input type="submit" value="Submit form" />
 						</div>
-                        <div>
-							2+3= <input type="text" name="check" />&nbsp;<input type="submit" value="Submit form" />
-						</div>
+						
 					</fieldset>
-				</form>
+				
 			</div>
-     </div>
      </form>
 </asp:Content>
 

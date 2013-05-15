@@ -11,4 +11,8 @@ public partial class webpages_hotelcontent : System.Web.UI.Page
     {
 
     }
+    protected void RadioButton3_CheckedChanged(object sender, EventArgs e)
+    {
+
+    }
 }
