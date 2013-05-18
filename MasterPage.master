@@ -21,16 +21,16 @@
             <table style="width:100%;">
                 <tr>
                     <td id="header" class="auto-style1">
-                        <div id="time"></div>
+                        <div id="login"><a href="login.aspx">Log In </a></div>
                         <div id="logoarea">
-                            <img alt="" class="logo" src="images/logobar.png" /></div>
+                            <img alt="" class="logo" src="images/logobar.jpg" /></div>
                         <div id="headermenubar">
                             <ul>
                               <li><a href="homepagecontent.aspx">Home</a>  |</li>
                              
-                              <li><a href="">Flight Tickets</a> |</li>
-                              <li><a href="">Hotels</a> |</li>
-                              <li><a href="">Rent Cars</a></li>
+                              <li><a href="Flightcontent.aspx">Flight Tickets</a> |</li>
+                              <li>News |</li>
+                              <li>Contact Us</li>
                          
                             </ul>
                         </div>

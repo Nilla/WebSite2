@@ -410,13 +410,13 @@
                                     <td colspan="2" >
                                         
                                       </td>
-                                    <td ><asp:CheckBox ID="CheckBox2" runat="server" />Retain details for my next visit.</td>
+                                    <td ></td>
                                   </tr>
                                   <tr style="">
                                     <td colspan="2">
                                         
                                       </td>
-                                    <td ><asp:CheckBox ID="CheckBox3" runat="server" />Sign me up! I'd like to receive Tiger Airways' Flight Deals and exclusive online offers.</td>
+                                    <td ></td>
                                   </tr>
                                  <tr style="">
                                     <td colspan="3" rowspan="4" >&nbsp;</td>                                                                                                                         

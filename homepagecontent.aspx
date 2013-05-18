@@ -30,8 +30,8 @@
 <div id="tabs">
   <ul>
     <li><a href="#tabs-1">Flight Tickets</a></li>
-    <li><a href="#tabs-2">Book Hotels</a></li>
-    <li><a href="#tabs-3">Rent Cars</a></li>
+    <li></li>
+    <li></li>
   </ul>
   <div id="tabs-1">
     <h2>Finding Flight Tickets</h2>
@@ -60,55 +60,24 @@
       </div>
   </div>
   <div id="tabs-2">
-    <h2>Book Hotels</h2>
+    <h2></h2>
        <div id="hotels">
-           <asp:Label ID="Label9" runat="server" Text="Country"></asp:Label>
-           <asp:DropDownList ID="DropDownList7" runat="server">
-        </asp:DropDownList>
-           <asp:Label ID="Label10" runat="server" Text="City"></asp:Label>
-           <asp:DropDownList ID="DropDownList8" runat="server">
-        </asp:DropDownList>
-           <br />
-           <asp:Label ID="Label11" runat="server" Text="Check In"></asp:Label>
-           <input id="checkin" type="text" size="25"/><a href="javascript:NewCal('checkin','ddmmyyyy')">
-            <img src="js/cal.gif" width="16" height="16" border="0" alt="Pick a date"/></a>
-           <br />
-           <asp:Label ID="Label12" runat="server" Text="Check Out"></asp:Label>
-           <input id="checkout" type="text" size="25"/><a href="javascript:NewCal('checkout','ddmmyyyy')">
-            <img src="js/cal.gif" width="16" height="16" border="0" alt="Pick a date"/></a>
-           <br />
-           <asp:Button ID="Button2" runat="server" Text="Search" />
+          
        </div>
   </div>
   <div id="tabs-3">
-    <h2>Rent Cars</h2>
+    <h2></h2>
      <div id="cars">
-         <asp:Label ID="Label13" runat="server" Text="Country"></asp:Label>
-         <asp:DropDownList ID="DropDownList9" runat="server"></asp:DropDownList>
-         <asp:Label ID="Label14" runat="server" Text="Pick Up City"></asp:Label>
-         <asp:DropDownList ID="DropDownList10" runat="server"></asp:DropDownList>
-         <br />
-         <asp:Label ID="Label15" runat="server" Text="Date and Time"></asp:Label>
-         <input id="pickupdate" type="text" size="25"/><a href="javascript:NewCal('pickupdate','ddmmyyyy',true,24)">
-            <img src="js/cal.gif" width="16" height="16" border="0" alt="Pick a date"/></a>
-         <br />
-         <br />
-         <asp:Label ID="Label17" runat="server" Text="Drop off"></asp:Label>
-         <asp:CheckBox ID="CheckBox1" runat="server" Text="As same as Pick Up place" />
-         <br />
-         <asp:Label ID="Label18" runat="server" Text="Date and Time"></asp:Label>
-          <input id="dropoffdate" type="text" size="25"/><a href="javascript:NewCal('dropoffdate','ddmmyyyy',true,24)">
-            <img src="js/cal.gif" width="16" height="16" border="0" alt="Pick a date"/></a>
-  
-         <br />
-         <asp:Button ID="Button3" runat="server" Text="Search" />
+         
      </div>
 </div>
 
         </div>
     </div>
         <div id="product_box2">
-            
+           <a href="Flightcontent.aspx" title="">
+              <img src="images/info.png" style="width:540px;height:260px;"/>
+           </a>
 
                     
 		   </div> 
@@ -119,14 +88,14 @@
 <div class="ws_images"><ul>
 <li><img src="data1/images/jetstar5807_narrowweb__300x414,0.jpg" alt="Bali" title="Bali" id="wows1_0"/></li>
 <li><img src="data1/images/alitaliaairlinesadvenice.jpg" alt="Alitalia" title="Alitalia" id="wows1_1"/></li>
-<li><img src="data1/images/ad_campaign_blow_dry_500.jpg" alt="Fight Better" title="Fight Better" id="wows1_2"/></li>
+<li><img src="data1/images/ad_campaign_blow_dry_500.jpg" alt="Flight Better" title="Flight Better" id="wows1_2"/></li>
 <li><img src="data1/images/mocktheislandstravelad.jpg" alt="Island" title="Island" id="wows1_3"/></li>
 <li><img src="data1/images/virgin_ipad_ad_0.jpg" alt="Flight Now" title="Flight Now" id="wows1_4"/></li>
 </ul></div>
 <div class="ws_bullets"><div>
 <a href="#" title="Bali"><img src="data1/tooltips/jetstar5807_narrowweb__300x414,0.jpg" alt="Bali"/>1</a>
 <a href="#" title="Alitalia"><img src="data1/tooltips/alitaliaairlinesadvenice.jpg" alt="Alitalia"/>2</a>
-<a href="#" title="Fight Better"><img src="data1/tooltips/ad_campaign_blow_dry_500.jpg" alt="Fight Better"/>3</a>
+<a href="#" title="Flight Better"><img src="data1/tooltips/ad_campaign_blow_dry_500.jpg" alt="Fight Better"/>3</a>
 <a href="#" title="Island"><img src="data1/tooltips/mocktheislandstravelad.jpg" alt="Island"/>4</a>
 <a href="#" title="Flight Now"><img src="data1/tooltips/virgin_ipad_ad_0.jpg" alt="Flight Now"/>5</a>
 </div></div>
